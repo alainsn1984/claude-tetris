@@ -158,7 +158,8 @@ kbd {
   transition: background 0.15s;
 }
 
-#restart-btn:hover {
+#restart-btn:hover,
+#play-btn:hover {
   background: #9bbdff;
 }
 
@@ -254,4 +255,145 @@ kbd {
 
 #controls-back-btn:hover {
   background: #9bbdff;
+}
+
+#play-btn {
+  background: #7aa2f7;
+  color: #0f0f17;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.15s;
+}
+
+.overlay-heading {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #7aa2f7;
+}
+
+.overlay-box {
+  max-width: 260px;
+}
+
+.scores {
+  width: 100%;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  color: #cfd3e0;
+}
+
+.score-table th {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #555570;
+  text-align: left;
+  padding: 2px 6px;
+  font-weight: 600;
+}
+
+.score-table td {
+  padding: 3px 6px;
+  border-top: 1px solid #2a2a3a;
+  text-align: left;
+}
+
+.score-table td:last-child,
+.score-table th:last-child {
+  text-align: right;
+}
+
+.score-table tr.highlight td {
+  color: #7aa2f7;
+  background: rgba(122, 162, 247, 0.12);
+  font-weight: 700;
+}
+
+.score-table .empty {
+  text-align: center;
+  color: #555570;
+}
+
+.stats {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: #888;
+}
+
+.name-form {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.name-form.hidden {
+  display: none;
+}
+
+#name-input {
+  flex: 1;
+  background: #1a1a25;
+  border: 1px solid #3a3a5a;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #e0e0e0;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+#name-input:focus {
+  outline: none;
+  border-color: #7aa2f7;
+}
+
+.name-form button {
+  background: #7aa2f7;
+  color: #0f0f17;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.name-form button:hover {
+  background: #9bbdff;
+}
+
+.overlay-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.ghost-btn {
+  background: transparent;
+  color: #888;
+  border: 1px solid #3a3a5a;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ghost-btn:hover {
+  color: #e57373;
+  border-color: #e57373;
 }
