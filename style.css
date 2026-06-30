@@ -81,6 +81,29 @@ body {
   border-radius: 4px;
 }
 
+/* ---- Selector de skin ---- */
+.skin-select {
+  background: #22223a;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #e0e0e0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.skin-select:focus {
+  outline: none;
+  border-color: #7aa2f7;
+}
+
+#board.skin-neon,
+#next-canvas.skin-neon {
+  background: #050507;
+}
+
 /* ---- Controles ---- */
 .controls ul {
   list-style: none;
